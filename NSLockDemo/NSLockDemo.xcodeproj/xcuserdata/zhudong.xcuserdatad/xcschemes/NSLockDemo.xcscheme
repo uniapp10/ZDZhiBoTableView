@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "53F3E5421D6D6CC900C33455"
-               BuildableName = "&#x521b;&#x5efa;&#x6761;&#x4ef6;&#x9501;.app"
-               BlueprintName = "&#x521b;&#x5efa;&#x6761;&#x4ef6;&#x9501;"
-               ReferencedContainer = "container:&#x521b;&#x5efa;&#x6761;&#x4ef6;&#x9501;.xcodeproj">
+               BlueprintIdentifier = "53F3E5651D6D8A7800C33455"
+               BuildableName = "NSLockDemo.app"
+               BlueprintName = "NSLockDemo"
+               ReferencedContainer = "container:NSLockDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "53F3E5421D6D6CC900C33455"
-            BuildableName = "&#x521b;&#x5efa;&#x6761;&#x4ef6;&#x9501;.app"
-            BlueprintName = "&#x521b;&#x5efa;&#x6761;&#x4ef6;&#x9501;"
-            ReferencedContainer = "container:&#x521b;&#x5efa;&#x6761;&#x4ef6;&#x9501;.xcodeproj">
+            BlueprintIdentifier = "53F3E5651D6D8A7800C33455"
+            BuildableName = "NSLockDemo.app"
+            BlueprintName = "NSLockDemo"
+            ReferencedContainer = "container:NSLockDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "53F3E5421D6D6CC900C33455"
-            BuildableName = "&#x521b;&#x5efa;&#x6761;&#x4ef6;&#x9501;.app"
-            BlueprintName = "&#x521b;&#x5efa;&#x6761;&#x4ef6;&#x9501;"
-            ReferencedContainer = "container:&#x521b;&#x5efa;&#x6761;&#x4ef6;&#x9501;.xcodeproj">
+            BlueprintIdentifier = "53F3E5651D6D8A7800C33455"
+            BuildableName = "NSLockDemo.app"
+            BlueprintName = "NSLockDemo"
+            ReferencedContainer = "container:NSLockDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "53F3E5421D6D6CC900C33455"
-            BuildableName = "&#x521b;&#x5efa;&#x6761;&#x4ef6;&#x9501;.app"
-            BlueprintName = "&#x521b;&#x5efa;&#x6761;&#x4ef6;&#x9501;"
-            ReferencedContainer = "container:&#x521b;&#x5efa;&#x6761;&#x4ef6;&#x9501;.xcodeproj">
+            BlueprintIdentifier = "53F3E5651D6D8A7800C33455"
+            BuildableName = "NSLockDemo.app"
+            BlueprintName = "NSLockDemo"
+            ReferencedContainer = "container:NSLockDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

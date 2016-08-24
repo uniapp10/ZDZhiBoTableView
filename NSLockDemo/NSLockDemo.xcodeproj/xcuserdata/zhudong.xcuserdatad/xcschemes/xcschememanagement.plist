@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>创建条件锁.xcscheme</key>
+		<key>NSLockDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>53F3E5421D6D6CC900C33455</key>
+		<key>53F3E5651D6D8A7800C33455</key>
 		<dict>
 			<key>primary</key>
 			<true/>
