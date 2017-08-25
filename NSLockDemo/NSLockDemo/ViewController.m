@@ -20,24 +20,23 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(itemClick)];
 }
 - (void)itemClick{
-    //创建互斥锁
-    NSLock *lock = [[NSLock alloc] init];
     for (int i = 0; i < 100; i++) {
+        NSLog(@"%.0f", self.tableView.contentSize.height);
+        NSLog(@"%@", NSStringFromCGPoint(self.tableView.contentOffset));
         dispatch_async(dispatch_queue_create("a", DISPATCH_QUEUE_CONCURRENT), ^{
             NSLog(@"%@",[NSThread currentThread]);
-            //互斥锁锁定
-            [lock lock];
             [self.arrM addObject:@"1"];
             if (self.arrM.count > 30) {
                 [self.arrM removeObjectsInRange:NSMakeRange(0, 29)];
             }
             dispatch_async(dispatch_get_main_queue(), ^{
-                
                 [self.tableView reloadData];
-                NSIndexPath *indexPath = [NSIndexPath indexPathForRow:(self.arrM.count - 1) inSection:0];
-                [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionBottom animated:YES];
-                //互斥锁打开
-                [lock unlock];
+                NSLog(@"%.0f", self.tableView.contentSize.height);
+                CGPoint offset = CGPointMake(0,self.tableView.contentSize.height - self.tableView.frame.size.height);
+                if (offset.y < 0) {
+                    offset = CGPointMake(0, -44);
+                }
+                [self.tableView setContentOffset:offset animated:NO];
             });
         });
     }
