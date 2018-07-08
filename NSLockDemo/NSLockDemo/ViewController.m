@@ -25,10 +25,12 @@
         NSLog(@"%@", NSStringFromCGPoint(self.tableView.contentOffset));
         dispatch_async(dispatch_queue_create("a", DISPATCH_QUEUE_CONCURRENT), ^{
             NSLog(@"%@",[NSThread currentThread]);
-            [self.arrM addObject:@"1"];
-            if (self.arrM.count > 30) {
-                [self.arrM removeObjectsInRange:NSMakeRange(0, 29)];
+            NSMutableArray *arrM_new = [NSMutableArray arrayWithArray:self.arrM];
+            [arrM_new addObject:@"1"];
+            if (arrM_new.count > 30) {
+                [arrM_new removeObjectsInRange:NSMakeRange(0, 29)];
             }
+            self.arrM = arrM_new;
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.tableView reloadData];
                 NSLog(@"%.0f", self.tableView.contentSize.height);
